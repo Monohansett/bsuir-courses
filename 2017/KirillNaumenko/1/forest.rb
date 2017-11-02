@@ -14,6 +14,7 @@ def run_forest_run(forest_trees)
   1.upto(forest_trees.length - 1) do |i|
     typed_button = gets.chomp
     if typed_button == KEEP_ON
+      puts forest_trees[i]
       puts print_tree forest_trees[i]
       puts 'Do u want to continue? [y/n]'
     elsif typed_button == STOP
